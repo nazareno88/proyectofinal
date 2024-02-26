@@ -1,0 +1,36 @@
+.footer{
+    background-color: rgba(0, 139, 69, 0.993) ;
+    margin: 20px 0;
+    
+    }
+  
+
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .footer-link{
+    width: 25%;
+    padding: 0 15px;
+    color: white;
+    &:hover{
+        transform: translateY(-3%);
+    }
+    h4{
+        color: white;
+        border-bottom: 2px solid black;
+    }
+  }
+
+  @media (min-width:320px) and (max-width:766px){
+    .footer-container{
+      display: flex;
+      flex-direction: row;
+      gap:40px;
+      max-width: 75%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

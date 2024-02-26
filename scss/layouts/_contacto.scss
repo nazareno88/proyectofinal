@@ -1,0 +1,75 @@
+.ubicacion-container{
+    background-image: url(../assets/images/portada-recoleta.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .box-ubi{
+     margin: 10px 0;
+     gap: 10px;
+
+     p{
+        @include text (center, white, 44px);
+        padding: 40px 0
+     }
+     h2{ @include text (center, white, 70px);
+        padding: 40px 0;
+    }
+}
+}
+
+.contacto-container{
+    h2{
+        text-align: center;
+        font-family: merriweather;
+        font-size: 50px;
+        background: linear-gradient(to right, white, rgba(0, 139, 69, 0.993));
+    }
+
+    .box-container-primary{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        iframe{
+            width: 100%;
+        }
+    }
+}
+
+.form-register{
+    background-color: rgb(2, 118, 62);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    h4{
+        @include text (center, white, 24px)
+    }
+    p{
+        color: white;
+    }
+    input{
+        border: 2px solid black;
+        text-align: center;
+        gap: 10px;
+        padding: 10px ;
+    }
+
+    .botons{
+        background-color: black;
+        color: white;
+        margin: 5px 0;
+        &:hover{
+            background-color:white ;
+            color: black;
+            box-shadow: 5px 2px 5px 2px;
+            transition: 1s;
+            margin: 10px;
+        }
+    }
+}

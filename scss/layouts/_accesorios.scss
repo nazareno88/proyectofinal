@@ -1,0 +1,66 @@
+//header//
+.accesorios-box{
+    background-image: url(../assets/images/acces.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    text-align: center;
+    h1{
+        @include text (center,rgb(0, 0, 0),80px);
+        padding: 60px 0;
+        font-family: $primaryText;
+    }
+    p{@include text (center,rgb(0, 0, 0),37px);
+        padding: 50px 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    button{
+        @include text(center,white,24px);
+        text-decoration: none;
+        background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
+        color: white;
+        padding: 20px;
+        
+    }
+   }
+
+   //main//
+   .accesorios{
+    text-align: center;
+    background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
+    padding: 4px 0;
+    color: white;
+    margin: 20px 0;
+   }
+
+
+   .accesorios-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+}
+
+.card-prod{
+    display: grid;
+    border: 2px solid black;
+    &:hover{
+        transform: translateY(-3%);
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        
+    }
+
+    .btn-secondary{
+        padding: 10px 0;
+        color: white;
+        background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
+    }}

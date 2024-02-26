@@ -1,0 +1,77 @@
+//header indumentaria//
+.indumentaria-box{
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../assets/images/indumentaria.jpg);
+
+    p{
+        @include text (center, white,30px);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 10px;
+        padding: 90px;
+    }
+
+    h1{
+        @include text(center, white,80px);
+        padding-bottom: 40px;
+        font-family: $primaryText;
+    }
+    &,button{
+        @include text(center,white,24px);
+        text-decoration: none;
+        background-color: rgb(252, 105, 0);
+        padding: 20px;
+        &:hover{
+            background-color: rgb(251, 251, 251);
+            color:rgb(252, 105, 0);
+            transition: 2s;
+        }
+    }
+}
+
+//main//
+.indumentaria-container{
+    h2{
+        background:linear-gradient(to left, white,rgb(252, 105, 0) );
+        margin: 20px 0;
+        padding: 10px;
+        color: white;
+    }
+}
+
+.box-productos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .card-prod{
+        display: grid;
+        border: 2px solid black;
+        &:hover{
+            transform: translateY(-3%);
+        }
+
+        img{
+            width: 300px;
+            object-fit: cover;
+            
+        }
+
+        .btn-primary{
+            padding: 10px;
+            color: white;
+            background-color: rgb(252, 105, 0); 
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 4px 4px 5px 8px;
+                transition: 2s;
+            }
+    }
+
+    }
+

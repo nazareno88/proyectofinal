@@ -1,0 +1,211 @@
+
+.flexible{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+//aplicando flexible//
+.main-container{
+    @extend .flexible;
+
+    h1{
+      text-align: center;
+      font-family: $primaryText;
+    }
+
+    img{
+        height: 300px;
+        width: 300px;
+        animation-name: efecto;
+        animation-iteration-count: 1;
+        animation-duration: 5s;
+    }
+
+   
+}
+
+//efecto//
+@keyframes efecto {
+
+    0% {
+        background-color: white;
+        border-radius: 20%;
+    }
+
+    50% {
+        background-color:rgba(0, 139, 69, 0.993) ;
+        border-radius: 50%;
+    }
+
+    100% {
+        background-color:white ;
+        border-radius: 20%;
+    }
+}
+
+//card//
+ .card{
+    @extend .flexible;
+    background-color: rgba(0, 139, 69, 0.993);
+    text-align: center;
+    h2{
+        color: white;
+    }
+ a{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 500px;
+    background-color: black;
+    &:hover{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.993);
+        border-radius: 50px;
+        background-color: white;
+        color: black;
+        transition: 2s;
+    }
+    
+ }
+
+
+ .card-container{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid black;
+    img{
+        justify-content: left;
+        align-self: center;
+        width: 75%;
+        &:hover{
+            border-radius: 30%;
+            transition: 2s;
+        }
+    }
+    p{
+      color: white;
+      font-size: 20px;
+      text-align: left;
+    }
+        
+        
+    }
+ }
+
+ //footer del index//
+footer{
+   .box{
+    @extend .flexible;
+    justify-content: right;
+    h3{
+      text-align: center;  
+    }
+    
+
+    color: white;
+    background-color: rgba(0, 139, 69, 0.993);
+
+    .box-container{
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        border: 2px solid black;
+        img{
+            justify-content: left;
+            align-self: center;
+            width: 70%;
+            &:hover{
+                border-radius: 30%;
+                transition: 2s;
+            }
+        }
+        p{
+          color: white;
+          font-size: 20px;
+          text-align: left;
+        }
+} 
+   }
+
+  .footer{
+    background-color: rgba(0, 139, 69, 0.993) ;
+    margin: 20px 0;
+    
+    }
+  }
+
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-link{
+    width: 25%;
+    padding: 0 15px;
+    color: white;
+    &:hover{
+        transform: translateY(-3%);
+    }
+    h4{
+        color: white;
+        border-bottom: 2px solid black;
+    }
+  }
+
+//mediaqueries//
+@media (min-width:768px)and (max-width:1023px){
+
+    .card{        
+       display: flex;
+
+       a{
+        margin: 0;
+       }
+    }
+    .card-container{
+        flex-direction: column;
+        
+
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .card{        
+        display: flex;
+        
+    a{
+        margin: 0;
+    }
+    
+     }
+     .card-container{
+         flex-direction: column;
+ 
+     }
+
+    .box{
+      display: flex;
+      width: 80%;
+      justify-content: center;
+
+     .box-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+
+        .footer-container{
+            width: 20%;
+        }
+        
+}
+}
+}

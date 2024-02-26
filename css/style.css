@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes efecto {
+  0% {
+    background-color: white;
+    border-radius: 20%;
+  }
+  50% {
+    background-color: rgba(0, 139, 69, 0.993);
+    border-radius: 50%;
+  }
+  100% {
+    background-color: white;
+    border-radius: 20%;
+  }
+}
+nav {
+  background: linear-gradient(to right, white, rgba(0, 139, 69, 0.993));
+}
+nav .container-fluid img {
+  width: 30px;
+  height: 30px;
+}
+nav .container-fluid .btn {
+  background-color: white;
+}
+nav .container-fluid .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: rgba(0, 139, 69, 0.993);
+  margin: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  width: 25%;
+  padding: 0 15px;
+  color: white;
+}
+.footer-link:hover {
+  transform: translateY(-3%);
+}
+.footer-link h4 {
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 75%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.flexible, footer .box, .card, .main-container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.main-container h1 {
+  text-align: center;
+  font-family: merriweather;
+}
+.main-container img {
+  height: 300px;
+  width: 300px;
+  animation-name: efecto;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+
+@keyframes efecto {
+  0% {
+    background-color: white;
+    border-radius: 20%;
+  }
+  50% {
+    background-color: rgba(0, 139, 69, 0.993);
+    border-radius: 50%;
+  }
+  100% {
+    background-color: white;
+    border-radius: 20%;
+  }
+}
+.card {
+  background-color: rgba(0, 139, 69, 0.993);
+  text-align: center;
+}
+.card h2 {
+  color: white;
+}
+.card a {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 0 500px;
+  background-color: black;
+}
+.card a:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.993);
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  transition: 2s;
+}
+.card .card-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  border: 2px solid black;
+}
+.card .card-container img {
+  justify-content: left;
+  align-self: center;
+  width: 75%;
+}
+.card .card-container img:hover {
+  border-radius: 30%;
+  transition: 2s;
+}
+.card .card-container p {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+footer .box {
+  justify-content: right;
+  color: white;
+  background-color: rgba(0, 139, 69, 0.993);
+}
+footer .box h3 {
+  text-align: center;
+}
+footer .box .box-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  border: 2px solid black;
+}
+footer .box .box-container img {
+  justify-content: left;
+  align-self: center;
+  width: 70%;
+}
+footer .box .box-container img:hover {
+  border-radius: 30%;
+  transition: 2s;
+}
+footer .box .box-container p {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+footer .footer {
+  background-color: rgba(0, 139, 69, 0.993);
+  margin: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  width: 25%;
+  padding: 0 15px;
+  color: white;
+}
+.footer-link:hover {
+  transform: translateY(-3%);
+}
+.footer-link h4 {
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    display: flex;
+  }
+  .card a {
+    margin: 0;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .card {
+    display: flex;
+  }
+  .card a {
+    margin: 0;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .box {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .box .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box .box-container p {
+    text-align: center;
+  }
+  .box .box-container .footer-container {
+    width: 20%;
+  }
+}
+.zapatillas-box {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/images/jordan-7.jpg);
+}
+.zapatillas-box p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 10px 0;
+  padding: 90px 0;
+}
+.zapatillas-box h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  padding-bottom: 40px;
+  font-family: merriweather;
+}
+.zapatillas-box, .zapatillas-box button {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: rgb(58, 2, 84);
+  padding: 20px;
+}
+.zapatillas-box:hover, .zapatillas-box button:hover {
+  background-color: white;
+  color: rgb(58, 2, 84);
+  transition: 2s;
+}
+
+.main-box h2 {
+  background: linear-gradient(to left, white, rgb(72, 1, 72));
+  margin: 20px 0;
+  padding: 10px;
+  color: white;
+}
+
+.box-productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card-prod {
+  display: grid;
+  border: 2px solid black;
+}
+.card-prod:hover {
+  transform: translateY(-3%);
+}
+.card-prod img {
+  width: 300px;
+  object-fit: cover;
+}
+.card-prod button {
+  padding: 10px;
+  color: white;
+  background-color: rgb(72, 1, 72);
+}
+.card-prod button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 4px 4px 5px 8px;
+  transition: 2s;
+}
+
+.indumentaria-box {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/images/indumentaria.jpg);
+}
+.indumentaria-box p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 10px;
+  padding: 90px;
+}
+.indumentaria-box h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  padding-bottom: 40px;
+  font-family: merriweather;
+}
+.indumentaria-box, .indumentaria-box button {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: rgb(252, 105, 0);
+  padding: 20px;
+}
+.indumentaria-box:hover, .indumentaria-box button:hover {
+  background-color: rgb(251, 251, 251);
+  color: rgb(252, 105, 0);
+  transition: 2s;
+}
+
+.indumentaria-container h2 {
+  background: linear-gradient(to left, white, rgb(252, 105, 0));
+  margin: 20px 0;
+  padding: 10px;
+  color: white;
+}
+
+.box-productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 10px;
+}
+
+.card-prod {
+  display: grid;
+  border: 2px solid black;
+}
+.card-prod:hover {
+  transform: translateY(-3%);
+}
+.card-prod img {
+  width: 300px;
+  object-fit: cover;
+}
+.card-prod .btn-primary {
+  padding: 10px;
+  color: white;
+  background-color: rgb(252, 105, 0);
+}
+.card-prod .btn-primary:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 4px 4px 5px 8px;
+  transition: 2s;
+}
+
+.accesorios-box {
+  background-image: url(../assets/images/acces.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 0;
+  text-align: center;
+}
+.accesorios-box h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+  padding: 60px 0;
+  font-family: merriweather;
+}
+.accesorios-box p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 37px;
+  padding: 50px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.accesorios-box button {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+  color: white;
+  padding: 20px;
+}
+
+.accesorios {
+  text-align: center;
+  background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+  padding: 4px 0;
+  color: white;
+  margin: 20px 0;
+}
+
+.accesorios-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 10px;
+}
+
+.card-prod {
+  display: grid;
+  border: 2px solid black;
+}
+.card-prod:hover {
+  transform: translateY(-3%);
+}
+.card-prod img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.card-prod .btn-secondary {
+  padding: 10px 0;
+  color: white;
+  background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+}
+
+.ubicacion-container {
+  background-image: url(../assets/images/portada-recoleta.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ubicacion-container .box-ubi {
+  margin: 10px 0;
+  gap: 10px;
+}
+.ubicacion-container .box-ubi p {
+  text-align: center;
+  color: white;
+  font-size: 44px;
+  padding: 40px 0;
+}
+.ubicacion-container .box-ubi h2 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  padding: 40px 0;
+}
+
+.contacto-container h2 {
+  text-align: center;
+  font-family: merriweather;
+  font-size: 50px;
+  background: linear-gradient(to right, white, rgba(0, 139, 69, 0.993));
+}
+.contacto-container .box-container-primary {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.contacto-container .box-container-primary iframe {
+  width: 100%;
+}
+
+.form-register {
+  background-color: rgb(2, 118, 62);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.form-register h4 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+.form-register p {
+  color: white;
+}
+.form-register input {
+  border: 2px solid black;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+.form-register .botons {
+  background-color: black;
+  color: white;
+  margin: 5px 0;
+}
+.form-register .botons:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 2px 5px 2px;
+  transition: 1s;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
