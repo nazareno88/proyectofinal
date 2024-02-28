@@ -76,5 +76,35 @@
 
     }
     
-    
+.guia{
+    display: grid;
+    margin: 40px 0;
+
+    .talles{
+        text-align: center;
+        border: 2px solid black;
+        width: 100%;
+        
+        h4{
+        @include text (center,white, 40px);
+         background-color: rgb(58, 2, 84);
+         font-family: $primaryText;
+        }
+       p{
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        background:linear-gradient(to right, rgb(95, 4, 107), rgb(20, 0, 20));
+       }
+      img{
+        max-width: 60%;
+        &:hover{
+            transform: rotateX(360deg);
+            transition: 2s;
+        }
+       }
+    }
+}    
+
+
 

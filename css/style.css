@@ -306,6 +306,36 @@ footer .footer {
   transition: 2s;
 }
 
+.guia {
+  display: grid;
+  margin: 40px 0;
+}
+.guia .talles {
+  text-align: center;
+  border: 2px solid black;
+  width: 100%;
+}
+.guia .talles h4 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  background-color: rgb(58, 2, 84);
+  font-family: merriweather;
+}
+.guia .talles p {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(to right, rgb(95, 4, 107), rgb(20, 0, 20));
+}
+.guia .talles img {
+  max-width: 60%;
+}
+.guia .talles img:hover {
+  transform: rotateX(360deg);
+  transition: 2s;
+}
+
 .indumentaria-box {
   background-size: cover;
   background-position: center center;
