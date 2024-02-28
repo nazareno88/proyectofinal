@@ -75,3 +75,56 @@
 
     }
 
+    .curiosidades{
+            h4{
+             margin: 20px 0;
+            padding: 20px;
+            background:linear-gradient(to left, white,rgb(252, 105, 0));
+            font-family: $primaryText;   
+            @include text(left,white,45px);
+            }
+            
+        
+        .box-1{
+            margin: 30px 0;
+            padding: 70px;
+            background-image: url(../assets/images/jordan-logo.png);
+            background-size: cover;
+            background-position: center center;
+            h5{
+                @include text(left,white,40px);
+        }
+        p{
+            color: white;
+        }
+        }
+
+        .box-2{
+            margin: 30px 0;
+            padding: 70px;
+            background-image: url(../assets/images/123.jpeg);
+            background-size: cover;
+            background-position: center center;
+            h5{
+                @include text(left,rgb(255, 255, 255),40px);
+             
+        }
+        p{
+            color: white;
+        }
+        }
+        .box-3{
+            margin: 30px 0;
+            padding: 70px;
+            background-image: url(../assets/images/puma-1.jpg);
+            background-size: cover;
+            background-position: center center;
+            h5{
+                @include text(left,rgb(255, 255, 255),40px);
+             
+        }
+        p{
+            color: white;
+        }
+        }
+    }
