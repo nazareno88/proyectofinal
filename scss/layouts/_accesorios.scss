@@ -65,6 +65,38 @@
         background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
     }}
 
+.carousel-inner{
+    margin: 10px 0px;
+    padding: 0 20px;
+    max-height: 80%;
+      object-fit: cover;
+      border: 2px solid black;
+      }
 
+      .marcas-box{
+        margin: 20px 0;
+        padding: 10px 0;
+        background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
+        @include text(left, white, 30px);
+        font-family:$primaryText;
+      }
 
+      .box-text{
+        display: grid;
+        justify-content: center;
+       width: 100%;
+        p{ 
+            @include text(center, black, 40px);
+        
+        }
+       
+        }
+      
+      
     
+    
+    
+     
+    
+        
+        
