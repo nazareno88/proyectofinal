@@ -3,7 +3,9 @@
     background-size: cover;
     background-position: center center;
     background-image: url(../assets/images/jordan-7.jpg);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p{
         @include text (center, white,30px);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

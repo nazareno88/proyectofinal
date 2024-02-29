@@ -7,11 +7,11 @@
     margin: 20px 0;
     text-align: center;
     h1{
-        @include text (center,rgb(0, 0, 0),80px);
+        @include text (center,rgb(255, 255, 255),80px);
         padding: 60px 0;
         font-family: $primaryText;
     }
-    p{@include text (center,rgb(0, 0, 0),37px);
+    p{@include text (center,rgb(255, 255, 255),37px);
         padding: 50px 0;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }

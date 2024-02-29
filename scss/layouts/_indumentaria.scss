@@ -3,6 +3,8 @@
     background-size: cover;
     background-position: center center;
     background-image: url(../assets/images/indumentaria.jpg);
+    display: flex;
+    justify-content: center;
 
     p{
         @include text (center, white,30px);

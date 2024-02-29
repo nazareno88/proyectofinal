@@ -247,6 +247,9 @@ footer .footer {
   background-size: cover;
   background-position: center center;
   background-image: url(../assets/images/jordan-7.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .zapatillas-box p {
   text-align: center;
@@ -349,6 +352,8 @@ footer .footer {
   background-size: cover;
   background-position: center center;
   background-image: url(../assets/images/indumentaria.jpg);
+  display: flex;
+  justify-content: center;
 }
 .indumentaria-box p {
   text-align: center;
@@ -502,14 +507,14 @@ footer .footer {
 }
 .accesorios-box h1 {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 80px;
   padding: 60px 0;
   font-family: merriweather;
 }
 .accesorios-box p {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 37px;
   padding: 50px 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
