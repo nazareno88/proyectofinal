@@ -442,6 +442,12 @@ footer .footer {
 .curiosidades .box-1 p {
   color: white;
 }
+.curiosidades .box-1:hover {
+  border-radius: 5%;
+  padding: 40px;
+  box-shadow: 2px 5px 10px red;
+  transition: 2s;
+}
 .curiosidades .box-2 {
   margin: 30px 0;
   padding: 70px;
@@ -457,20 +463,33 @@ footer .footer {
 .curiosidades .box-2 p {
   color: white;
 }
-.curiosidades .box-3 {
+.curiosidades .box-2:hover {
+  border-radius: 5%;
+  padding: 40px;
+  box-shadow: 2px 5px 10px grey;
+  transition: 2s;
+}
+
+.box-3 {
   margin: 30px 0;
   padding: 70px;
   background-image: url(../assets/images/puma-1.jpg);
   background-size: cover;
   background-position: center center;
 }
-.curiosidades .box-3 h5 {
+.box-3 h5 {
   text-align: left;
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
-.curiosidades .box-3 p {
+.box-3 p {
   color: white;
+}
+.box-3:hover {
+  border-radius: 5%;
+  padding: 40px;
+  box-shadow: 2px 5px 10px rgb(7, 118, 155);
+  transition: 2s;
 }
 
 .accesorios-box {

@@ -86,6 +86,7 @@
             
         
         .box-1{
+            
             margin: 30px 0;
             padding: 70px;
             background-image: url(../assets/images/jordan-logo.png);
@@ -96,6 +97,13 @@
         }
         p{
             color: white;
+        }
+        &:hover{
+            border-radius: 5%;
+            padding:40px;
+            box-shadow: 2px 5px 10px red;
+            transition: 2s;
+            
         }
         }
 
@@ -112,6 +120,15 @@
         p{
             color: white;
         }
+        &:hover{
+            border-radius: 5%;
+            padding:40px;
+            box-shadow: 2px 5px 10px grey;
+            transition: 2s;
+            
+        }
+        
+        }
         }
         .box-3{
             margin: 30px 0;
@@ -126,5 +143,12 @@
         p{
             color: white;
         }
+        &:hover{
+            border-radius: 5%;
+            padding:40px;
+            box-shadow: 2px 5px 10px rgb(7, 118, 155);
+            transition: 2s;
+            
         }
-    }
+        }
+    
