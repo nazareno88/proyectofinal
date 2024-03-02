@@ -528,6 +528,11 @@ footer .footer {
   color: white;
   padding: 20px;
 }
+.accesorios-box button:hover {
+  margin: 2px;
+  box-shadow: 2px 5px 8px rgb(0, 0, 0);
+  transition: 2s;
+}
 
 .accesorios {
   text-align: center;
@@ -584,15 +589,65 @@ footer .footer {
 
 .box-text {
   display: grid;
-  justify-content: center;
-  width: 100%;
 }
 .box-text p {
   text-align: center;
   color: black;
   font-size: 40px;
 }
+.box-text a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin: 0 400px;
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+  color: white;
+}
+.box-text a:hover {
+  padding: 5px;
+  box-shadow: 2px 5px 8px rgb(6, 5, 5);
+  transition: 2s;
+}
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box-text {
+    display: grid;
+  }
+  .box-text p {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+  }
+  .box-text a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0 150px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+    color: white;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .box-text {
+    display: grid;
+  }
+  .box-text p {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+  }
+  .box-text a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(13, 93, 55), rgb(254, 17, 0));
+    color: white;
+  }
+}
 .ubicacion-container {
   background-image: url(../assets/images/portada-recoleta.jpg);
   background-position: center center;

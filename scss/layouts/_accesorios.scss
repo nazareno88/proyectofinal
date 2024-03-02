@@ -22,7 +22,11 @@
         background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0));
         color: white;
         padding: 20px;
-        
+        &:hover{
+            margin: 2px;
+            box-shadow: 2px 5px 8px rgb(0, 0, 0);
+            transition: 2s;
+        }
     }
    }
 
@@ -83,15 +87,58 @@
 
       .box-text{
         display: grid;
-        justify-content: center;
-       width: 100%;
         p{ 
             @include text(center, black, 40px);
         
         }
-       
+        a{
+            @include text(center, rgb(255, 255, 255), 24px);
+            margin: 0 400px;
+            text-decoration: none;
+            background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0)) ;
+            color: white;   
+            &:hover{
+                padding: 5px;
+                box-shadow: 2px 5px 8px rgb(6, 5, 5);
+                transition: 2s;
+            }
+            
+        }
         }
       
+        @media (min-width:768px)and (max-width:1023px){
+            .box-text{
+                display: grid;
+                p{ 
+                    @include text(center, black, 40px);
+                
+                }
+                a{
+                    @include text(center, rgb(255, 255, 255), 24px);
+                    margin: 0 150px;
+                    text-decoration: none;
+                    background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0)) ;
+                    color: white;   
+                }
+                }
+        }
+
+        @media (min-width:320px)and (max-width:767px){
+            .box-text{
+                display: grid;
+                p{ 
+                    @include text(center, black, 40px);
+                
+                }
+                a{
+                    @include text(center, rgb(255, 255, 255), 24px);
+                    margin: 0px;
+                    text-decoration: none;
+                    background:linear-gradient(to right,rgb(13, 93, 55), rgb(254, 17, 0)) ;
+                    color: white;   
+                }
+                }
+        }
       
     
     
