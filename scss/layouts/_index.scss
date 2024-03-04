@@ -47,61 +47,40 @@
     }
 }
 
-//card//
- .card{
-    @extend .flexible;
-    background-color: rgba(0, 139, 69, 0.993);
-    text-align: center;
-    h2{
-        color: white;
-    }
- a{
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    margin: 0 500px;
-    background-color: black;
-    &:hover{
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.993);
-        border-radius: 50px;
-        background-color: white;
-        color: black;
-        transition: 2s;
-    }
-    
- }
-
-
- .card-container{
-    display: flex;
-    padding: 10px;
-    gap: 10px;
+.card{
+    width: 100%;
+    background-color:rgba(0, 139, 69, 0.993) ;
     border: 2px solid black;
-    img{
-        justify-content: left;
-        align-self: center;
-        width: 75%;
-        &:hover{
-            border-radius: 30%;
-            transition: 2s;
+    padding: 20px;
+
+    .card-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @include text (center, white, 40px);
+            font-family:$primaryText;
         }
+        img{
+            display: flex;
+            width: 100%;
+            &:hover{
+                border-radius: 30%;
+                transition: 2s;
+            }
+         }
+         p{ 
+            @include text (left, white, 16px);
+
+         }
     }
-    p{
-      color: white;
-      font-size: 20px;
-      text-align: left;
-    }
-        
-        
-    }
- }
+}
+
 
  //footer del index//
 footer{
    .box{
     @extend .flexible;
-    justify-content: right;
     h3{
       text-align: center;  
     }
@@ -111,7 +90,7 @@ footer{
     background-color: rgba(0, 139, 69, 0.993);
 
     .box-container{
-        display: flex;
+        display:flex;
         padding: 10px;
         gap: 10px;
         border: 2px solid black;
@@ -153,39 +132,12 @@ footer{
 
 
 //mediaqueries//
-@media (min-width:768px)and (max-width:1023px){
-
-    .card{        
-       display: flex;
-
-       a{
-        margin: 0;
-       }
-    }
-    .card-container{
-        flex-direction: column;
-        
-
-    }
-}
-
 @media (min-width:320px) and (max-width:767px){
-    .card{        
-        display: flex;
-        
-    a{
-        margin: 0;
-    }
-    
-     }
-     .card-container{
-         flex-direction: column;
- 
-     }
+      
 
     .box{
-      display: flex;
-      width: 80%;
+      display: grid;
+      width: 100%;
       justify-content: center;
 
      .box-container{
