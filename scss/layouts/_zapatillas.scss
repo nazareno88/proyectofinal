@@ -2,19 +2,19 @@
 .zapatillas-box{
     background-size: cover;
     background-position: center center;
-    background-image: url(../assets/images/jordan-7.jpg);
+    background-image: url(../assets/images/jordan7.webp);
     display: flex;
     justify-content: center;
   
     p{
-        @include text (center, white,30px);
+        @include text (center, rgb(255, 255, 255),30px);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin: 10px 0;
         padding: 90px 0;
     }
 
     h1{
-        @include text(center, white,80px);
+        @include text(center, rgb(250, 250, 250),80px);
         padding-bottom: 40px;
         font-family: $primaryText;
     }
@@ -22,11 +22,11 @@
     &,button{
         @include text(center,white,24px);
         text-decoration: none;
-        background-color: rgb(58, 2, 84);
+        background-color: rgb(0, 121, 161);
         padding: 20px;
         &:hover{
             background-color: white;
-            color: rgb(58, 2, 84);
+            color: rgb(0, 0, 0);
             transition: 2s;
         }
     }
@@ -35,7 +35,7 @@
 //main//
 .main-box{
     h2{
-        background:linear-gradient(to left, white, rgb(72, 1, 72));
+        background:linear-gradient(to left, white,rgb(0, 121, 161));
         margin: 20px 0;
         padding: 10px;
         color: white;
@@ -67,7 +67,7 @@
         button{
             padding: 10px;
             color: white;
-            background-color: rgb(72, 1, 72); 
+            background-color: rgb(0, 121, 161); 
             &:hover{
                 background-color: white;
                 color: black;
@@ -89,14 +89,14 @@
         
         h4{
         @include text (center,white, 40px);
-         background-color: rgb(58, 2, 84);
+         background-color:rgb(0, 121, 161);
          font-family: $primaryText;
         }
        p{
         text-align: center;
         font-size: 24px;
         color: white;
-        background:linear-gradient(to right, rgb(95, 4, 107), rgb(20, 0, 20));
+        background:linear-gradient(to right, rgb(0, 121, 161), rgb(0, 37, 72));
        }
       img{
         max-width: 60%;

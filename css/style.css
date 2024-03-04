@@ -267,13 +267,13 @@ footer .footer {
 .zapatillas-box {
   background-size: cover;
   background-position: center center;
-  background-image: url(../assets/images/jordan-7.jpg);
+  background-image: url(../assets/images/jordan7.webp);
   display: flex;
   justify-content: center;
 }
 .zapatillas-box p {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 10px 0;
@@ -281,7 +281,7 @@ footer .footer {
 }
 .zapatillas-box h1 {
   text-align: center;
-  color: white;
+  color: rgb(250, 250, 250);
   font-size: 80px;
   padding-bottom: 40px;
   font-family: merriweather;
@@ -291,17 +291,17 @@ footer .footer {
   color: white;
   font-size: 24px;
   text-decoration: none;
-  background-color: rgb(58, 2, 84);
+  background-color: rgb(0, 121, 161);
   padding: 20px;
 }
 .zapatillas-box:hover, .zapatillas-box button:hover {
   background-color: white;
-  color: rgb(58, 2, 84);
+  color: rgb(0, 0, 0);
   transition: 2s;
 }
 
 .main-box h2 {
-  background: linear-gradient(to left, white, rgb(72, 1, 72));
+  background: linear-gradient(to left, white, rgb(0, 121, 161));
   margin: 20px 0;
   padding: 10px;
   color: white;
@@ -329,7 +329,7 @@ footer .footer {
 .card-prod button {
   padding: 10px;
   color: white;
-  background-color: rgb(72, 1, 72);
+  background-color: rgb(0, 121, 161);
 }
 .card-prod button:hover {
   background-color: white;
@@ -351,14 +351,14 @@ footer .footer {
   text-align: center;
   color: white;
   font-size: 40px;
-  background-color: rgb(58, 2, 84);
+  background-color: rgb(0, 121, 161);
   font-family: merriweather;
 }
 .guia .talles p {
   text-align: center;
   font-size: 24px;
   color: white;
-  background: linear-gradient(to right, rgb(95, 4, 107), rgb(20, 0, 20));
+  background: linear-gradient(to right, rgb(0, 121, 161), rgb(0, 37, 72));
 }
 .guia .talles img {
   max-width: 60%;
