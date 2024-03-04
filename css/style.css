@@ -204,6 +204,27 @@ footer .footer {
   border-bottom: 2px solid black;
 }
 
+.galery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.galery-container .galery {
+  margin: 30px;
+}
+.galery-container .galery img {
+  border-radius: 10px;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.text-footer {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .card {
     display: flex;
@@ -249,7 +270,6 @@ footer .footer {
   background-image: url(../assets/images/jordan-7.jpg);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .zapatillas-box p {
   text-align: center;
@@ -674,7 +694,7 @@ footer .footer {
 .contacto-container h2 {
   text-align: center;
   font-family: merriweather;
-  font-size: 50px;
+  font-size: 34px;
   background: linear-gradient(to right, white, rgba(0, 139, 69, 0.993));
 }
 .contacto-container .box-container-primary {
@@ -689,9 +709,13 @@ footer .footer {
 .contacto-container .box-container-primary iframe {
   width: 100%;
 }
+.contacto-container .box-container-primary iframe:hover {
+  height: 500px;
+  transition: 2s;
+}
 
 .form-register {
-  background-color: rgb(2, 118, 62);
+  background-color: rgba(0, 139, 69, 0.993);
   display: grid;
   justify-content: center;
   align-items: center;

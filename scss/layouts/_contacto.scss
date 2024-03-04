@@ -22,7 +22,7 @@
     h2{
         text-align: center;
         font-family: merriweather;
-        font-size: 50px;
+        font-size: 34px;
         background: linear-gradient(to right, white, rgba(0, 139, 69, 0.993));
     }
 
@@ -37,16 +37,21 @@
 
         iframe{
             width: 100%;
+            &:hover{
+                height: 500px;
+                transition: 2s;
+            }
         }
     }
 }
 
 .form-register{
-    background-color: rgb(2, 118, 62);
+    background-color:rgba(0, 139, 69, 0.993);
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
     h4{
         @include text (center, white, 24px)
     }
@@ -73,3 +78,4 @@
         }
     }
 }
+
