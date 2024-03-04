@@ -1,1 +1,2 @@
-﻿Cree el readme, en mi trabajo ya tengo las 3 paginas de productos casi listas diria, me faltaria revisar detalles, en cuanto a la de contacto e inicio voy a mejorarlas lo mas que pueda-
+﻿Cree el readme, en mi trabajo ya tengo las 3 paginas de productos casi listas diria, me faltaria revisar detalles, en cuanto a la de contacto e inicio voy a mejorarlas lo mas que pueda.
+Hoy agregue bastantes cosas, me tiro un problema github que ya me habia arrojado la otra vez y se pudo solucionar, creo que me faltan solucionar detalles pero ya estoy encaminado y por suerte me faltan dias para entregarlo.
