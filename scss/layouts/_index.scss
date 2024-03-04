@@ -131,32 +131,6 @@ footer{
         }
 } 
    }
-
-  .footer{
-    background-color: rgba(0, 139, 69, 0.993) ;
-    margin: 20px 0;
-    
-    }
-  }
-
-  .footer-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-link{
-    width: 25%;
-    padding: 0 15px;
-    color: white;
-    &:hover{
-        transform: translateY(-3%);
-    }
-    h4{
-        color: white;
-        border-bottom: 2px solid black;
-    }
-  }
-
   .galery-container{
     display: grid;
    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
@@ -227,6 +201,7 @@ footer{
             width: 20%;
         }
         
+}
 }
 }
 }
