@@ -406,6 +406,8 @@ footer .text-footer {
 }
 .curiosidades .box-1 p {
   color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 .curiosidades .box-1:hover {
   border-radius: 5%;
@@ -422,11 +424,13 @@ footer .text-footer {
 }
 .curiosidades .box-2 h5 {
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: rgb(236, 118, 0);
   font-size: 40px;
 }
 .curiosidades .box-2 p {
-  color: white;
+  color: rgb(236, 118, 0);
+  font-weight: bold;
+  font-size: 16px;
 }
 .curiosidades .box-2:hover {
   border-radius: 5%;
@@ -449,6 +453,8 @@ footer .text-footer {
 }
 .box-3 p {
   color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 .box-3:hover {
   border-radius: 5%;

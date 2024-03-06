@@ -99,6 +99,8 @@
         }
         p{
             color: white;
+            font-weight: bold;
+            font-size: 16px;
         }
         &:hover{
             border-radius: 5%;
@@ -116,11 +118,13 @@
             background-size: cover;
             background-position: center center;
             h5{
-                @include text(left,rgb(255, 255, 255),40px);
+                @include text(left,rgb(236, 118, 0),40px);
              
         }
         p{
-            color: white;
+            color: rgb(236, 118, 0);
+            font-weight: bold;
+            font-size: 16px;
         }
         &:hover{
             border-radius: 5%;
@@ -144,6 +148,8 @@
         }
         p{
             color: white;
+            font-weight: bold;
+            font-size: 16px;
         }
         &:hover{
             border-radius: 5%;
